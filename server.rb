@@ -1,4 +1,10 @@
 require 'sinatra'
+require 'data_mapper'
+require 'sinatra/partial'
+
+require_relative 'app/data_mapper_setup'
+
+require_relative 'app/models/user'
 
 enable :sessions
 
