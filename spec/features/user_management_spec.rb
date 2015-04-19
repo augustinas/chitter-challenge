@@ -17,5 +17,5 @@ def user_sign_up
   fill_in :name, with: 'Sam'
   fill_in :email, with: 'sammail@tansaku.com'
   fill_in :password, with: 'bananas!'
-  click_button 'Sing Up'
+  click_button 'Sign up'
 end
