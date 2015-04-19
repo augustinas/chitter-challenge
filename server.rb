@@ -2,9 +2,11 @@ require 'sinatra'
 require 'data_mapper'
 require 'sinatra/partial'
 
-require_relative 'app/data_mapper_setup'
+# Note to self: ALWAYS(!!!) load models before doing database setup
 
 require_relative 'app/models/user'
+
+require_relative 'app/data_mapper_setup'
 
 enable :sessions
 
